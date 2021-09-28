@@ -50,7 +50,7 @@ def count2(last6months):
 def csv1(counter1):
     with open("total.csv", "w") as csvfile:
         write = csv.writer(csvfile)
-        heading = ["Total Requests"]
+        heading = ["Year", "Requests"]
         write.writerow(heading)
         for tots in counter1:
             write.writerow((tots, counter1[tots]))
@@ -58,7 +58,7 @@ def csv1(counter1):
 def csv2(counter2):
     with open("last6.csv", "w") as csvfile:
         write = csv.writer(csvfile)
-        heading = ["Last 6 Months","Requests"]
+        heading = ["Last 6 Months Data","Requests"]
         write.writerow(heading)
         for tots in counter2:
             write.writerow((tots,counter2[tots]))
